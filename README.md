@@ -14,12 +14,30 @@ or
 $ yarn add @nitra/isenv
 ```
 
-## Usage
+## Usage with ES Modules
 
 ```javascript
 "use strict";
 
 import { isDev, isProd } from "@nitra/isenv";
+
+{
+  console.log("is production =", isProd);
+
+  /* ... */
+
+  if (isDev) {
+    /* ... */
+  }
+}
+```
+
+## Usage with require
+
+```javascript
+"use strict";
+
+const { isDev, isProd } = reuire("@nitra/isenv");
 
 {
   console.log("is production =", isProd);

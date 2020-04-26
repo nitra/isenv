@@ -1,8 +1,8 @@
 {
   "name": "@nitra/isenv",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "NODE_ENV shortcuts",
-  "main": "index.js",
+  "main": "./index.cjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,11 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/nitra/isenv.git"
   },
+  "type": "module",
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./index.cjs"
+  },
   "keywords": [
     "isdev",
     "isprod",
     "istest"
   ],
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "author": "nitra",
   "license": "MIT",
   "bugs": {
