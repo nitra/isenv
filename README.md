@@ -37,7 +37,7 @@ import { isDev, isProd } from "@nitra/isenv";
 ```javascript
 "use strict";
 
-const { isDev, isProd } = reuire("@nitra/isenv");
+const { isDev, isProd } = require("@nitra/isenv");
 
 {
   console.log("is production =", isProd);
